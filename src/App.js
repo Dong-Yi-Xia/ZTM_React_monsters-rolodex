@@ -7,7 +7,7 @@ import './App.css';
 class App extends Component{
 
   constructor(){
-    super() // call the constructor on the Component class. Give acess to this.state
+    super() // call the constructor on the Component class. Get access to this.state
     this.state = {
         monsters: []
     }
