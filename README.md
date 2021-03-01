@@ -45,7 +45,7 @@ https://docs.github.com/en/enterprise/2.15/user/articles/generating-a-new-ssh-ke
 npm install gh-pages / npm add gh-pages <br>
 
 In package.json <br>
-    "homepage": "github pages link", <br>
+    "homepage": "https://username.github.io/repoName", <br>
 
 Inside the script tag add <br>
     "predeploy": "npm run build",  or  "predeploy": "yarn build", <br>
