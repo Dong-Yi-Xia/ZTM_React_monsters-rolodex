@@ -33,3 +33,6 @@ https://www.w3schools.com/jsref/event_onchange.asp
 
 Synthetic Event
 https://reactjs.org/docs/events.html
+
+github add Ssh key to github
+https://docs.github.com/en/enterprise/2.15/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent

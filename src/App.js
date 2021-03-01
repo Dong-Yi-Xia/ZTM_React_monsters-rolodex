@@ -13,6 +13,9 @@ class App extends Component{
         monsters: [],
         searchField: ''
     }
+
+    // this.searchOnChange = this.searchOnChange.bind(this)
+    // adding the above line allow us to use regular function to call this, older way. Instead of using arrow function
   }
 
   // render onto the DOM for the first time, and calls whatever is in the block of code
@@ -26,6 +29,8 @@ class App extends Component{
   searchOnChange = (e) => {
     //this.setState is asynchronous, 
     //therefore we add a 2nd arg, anonymous arrow function to log immidately
+    //"this" keyword in ES6 arrow function refer to this function scope
+    //if using normal function "this" is undefined, because "this" in very top level scope. unless we apply bind(this) in the constructor. older way.
     this.setState({
       searchField: e.target.value
     }, ()=>{console.log(this.state)})
@@ -45,11 +50,11 @@ class App extends Component{
       
       return(
         <div className='App'>
-          
+          <h1>Monsters Rolodex</h1>
           <SearchBox 
              placeholder='search monster' 
-            //  handleChange={this.searchOnChange}
-             handleChange={e => this.setState( {searchField: e.target.value} )}
+             handleChange={this.searchOnChange}
+            //  handleChange={e => this.setState( {searchField: e.target.value} )}
           />
           <CardList monsters={filteredMonsters} /> 
         </div>
