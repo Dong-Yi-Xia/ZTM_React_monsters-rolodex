@@ -1,6 +1,9 @@
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Github Page
+https://dong-yi-xia.github.io/ZTM_React_monsters-rolodex/.
+
 ## Resource
 React Developer Tools
 https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
